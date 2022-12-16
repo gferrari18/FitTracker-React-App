@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 12px solid #fff;
+    border: 12px solid rgb(83, 81, 81);
     border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -20,7 +20,7 @@
   
     margin-bottom: 24px;
     padding: 24px;
-    color: #fff;
+    color: rgb(27, 27, 27);
   }
   
   .Regwindow-subscription > p {
@@ -46,7 +46,7 @@
     border: none;
     font-size: 18px;
     margin-bottom: 16px;
-    border: 1px solid #fff;
+    border: 1px solid rgb(61, 59, 59);
     justify-content: center;
   }
   

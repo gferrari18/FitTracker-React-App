@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import "./Regwindow.css";
 import { Button } from "./Button";
@@ -9,22 +9,28 @@ function Regwindow() {
   const inputRef1 = useRef(null);
   const inputRef2 = useRef(null);
   const inputRef3 = useRef(null);
+  const [reg, setReg] = useState("Register")
 
-  function Login() {
+  const Login = () => {
     var url =
-      "https://flask-service.ahu3a22b1c5e8.us-west-2.cs.amazonlightsail.com/login/" +
+      "http://192.168.50.54:5000/login/" +
       inputRef1.current.value +
       "/" +
       inputRef2.current.value +
       "/" +
       inputRef3.current.value;
-    axios.get(url);
+    axios.get(url).then(
+      (response) => {
+        alert(response.data.message)
+      }
+    );
   }
 
   return (
     <div className='Register'>
     <div className="Regwindow-container">
-      <h1>Register</h1>
+    <video src="/videos/vid1.mp4" autoPlay loop muted />
+      <h1>{reg}</h1>
       <form>
         <div>
           <input
@@ -62,6 +68,7 @@ function Regwindow() {
           >
             Submit
           </Button>
+          
         </div>
       </form>
     </div>

@@ -5,6 +5,10 @@
     font-family: 'PT Sans', sans-serif;
   }
   
+html, body {
+    height: 100%;
+    width: 100%;
+}
   
 .Home,
 .Download,
@@ -18,19 +22,19 @@
 }
 
 .Download {
-  background-image: url(../public/images/pic1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
   color: rgb(252, 252, 252);
-  font-size: 100px;
 }
 
 .Register {
-  background-image: url('../public/images/pic2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
   color: rgb(252, 252, 252);
-  font-size: 100px;
 }
