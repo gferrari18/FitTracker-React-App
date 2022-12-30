@@ -1,6 +1,13 @@
 import React from "react";
 import "../../App.css";
+import Downwindow from '../Downwindow';
 
-export default function Download() {
-  return <h1 className="Download">DOWNLOAD</h1>;
+function Download() {
+  return (
+   <>
+    <Downwindow />
+   </>
+  )
 }
+
+export default Download;

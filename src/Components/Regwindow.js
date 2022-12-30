@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import "../App.css";
 import "./Regwindow.css";
-import { Button } from "./Button";
+import { Button2 } from "./Button2";
 import axios from "axios";
 import { useRef } from "react";
+import {useNavigate} from 'react-router-dom';
 
 function Regwindow() {
+  const navigate = useNavigate();
   const inputRef1 = useRef(null);
   const inputRef2 = useRef(null);
   const inputRef3 = useRef(null);
   const [reg, setReg] = useState("Register")
+  const [hide, setHide] = useState(false)
+  const [download, setDownload] = useState('Submit')
 
   const Login = () => {
     var url =
@@ -21,9 +25,19 @@ function Regwindow() {
       inputRef3.current.value;
     axios.get(url).then(
       (response) => {
-        alert(response.data.message)
+        alert(response.data.message);
+        if (response.data.message === "Thank you for registering") {
+          setHide(true)
+          setReg('Download now!')
+          setDownload('Download')
+        }
+        
       }
     );
+  }
+
+  const Link2 = () => {
+    return navigate('/Download')
   }
 
   return (
@@ -39,6 +53,7 @@ function Regwindow() {
             name="email"
             type="email"
             placeholder="Your Email"
+            hidden={hide}
           />
         </div>
         <div>
@@ -48,6 +63,7 @@ function Regwindow() {
             name="Username"
             type="Username"
             placeholder="Your Username"
+            hidden={hide}
           />
         </div>
         <div>
@@ -57,18 +73,18 @@ function Regwindow() {
             name="Password"
             type="Password"
             placeholder="Your Password"
+            hidden={hide}
           />
         </div>
         <div>
-          <Button
-            onClick={Login}
+            <Button2
+            onClick={download === 'Submit' ? Login : Link2}
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
-          >
-            Submit
-          </Button>
-          
+            >
+            {download}
+            </Button2>
         </div>
       </form>
     </div>
