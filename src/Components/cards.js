@@ -21,6 +21,12 @@ function Cards() {
               label="Download"
               path="/download"
             />
+             <CardItem
+              src="/images/gus.jpg"
+              text="About"
+              label="About me!"
+              path="/About"
+            />
           </ul>
         </div>
       </div>

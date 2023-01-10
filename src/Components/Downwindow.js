@@ -19,6 +19,11 @@ function Downwindow() {
             Download
             </Button2> 
           </a>
+          <p>
+            <a href="https://dev.mysql.com/downloads/connector/odbc/">
+            Download required file
+            </a>
+            </p>
     </div>
     </div>
   );

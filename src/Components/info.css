@@ -1,0 +1,14 @@
+.Info-container {
+    background-image: linear-gradient(#242424,#3a3939);
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid rgb(83, 81, 81);
+    border-radius: px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 90%;
+  }

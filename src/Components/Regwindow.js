@@ -16,11 +16,11 @@ function Regwindow() {
   const [download, setDownload] = useState('Submit')
 
   const Login = () => {
-    var url =
-      "http://192.168.50.54:5000/login/" +
-      inputRef1.current.value +
-      "/" +
+    let url =
+      "https://flask-service.q7fnn9no8ij30.us-west-2.cs.amazonlightsail.com/login/" +
       inputRef2.current.value +
+      "/" +
+      inputRef1.current.value +
       "/" +
       inputRef3.current.value;
     axios.get(url).then(
@@ -33,7 +33,7 @@ function Regwindow() {
         }
         
       }
-    );
+    ).catch(error => {console.log(error)});
   }
 
   const Link2 = () => {
@@ -78,6 +78,7 @@ function Regwindow() {
         </div>
         <div>
             <Button2
+            type="button"
             onClick={download === 'Submit' ? Login : Link2}
             className="btns"
             buttonStyle="btn--outline"
