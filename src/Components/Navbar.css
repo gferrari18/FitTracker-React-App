@@ -80,6 +80,15 @@
     position: relative;
   }
 
+ 
+  h1{
+    font-size: 3rem;
+  }
+
+  img{
+    width: 0%;
+    height: 0%;
+  }
   .nav-menu {
     display: flex;
     justify-content:flex-start;
@@ -156,4 +165,10 @@
     color: #242424;
     transition: 250ms;
   }
+
+  .WebContainer{ 
+    width:100%; 
+    min-width:1000px; 
+    height:auto; 
+}  
 }

@@ -22,7 +22,7 @@ function Cards() {
               path="/download"
             />
              <CardItem
-              src="/images/gus.jpg"
+              src="/images/SpokaneDowntown.jpg"
               text="About"
               label="About me!"
               path="/About"

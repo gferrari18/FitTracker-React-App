@@ -9,7 +9,7 @@ function Downwindow() {
     <div className="Downwindow-container">
     <video src="/videos/vid3.mp4" autoPlay loop muted />
         <h1>Download now!</h1>
-          <a href="https://www.google.com/">
+          <a href="https://drive.google.com/file/d/1bcrNee36jbiMWKpZnsk8Zg64KoRwvS_Y/view?usp=share_link">
             <Button2
             onClick={null}
             className="btns"

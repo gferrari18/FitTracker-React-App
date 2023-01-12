@@ -1,0 +1,71 @@
+.Aboutme-container {
+  background-color: #242424;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 12px solid rgb(83, 81, 81);
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: auto;
+  }
+
+#image1 {
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  margin: 40px;
+  margin-top: 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  color: chartreuse;
+}
+
+@media screen and (max-width: 960px) {
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #image1 {
+    height: 75%;
+    width: 75%
+  }  
+
+  .Aboutme-container {
+  height:auto
+  }
+
+  .column > p, h1, h4 {
+    font-size: small;
+  }
+
+  .columm > br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 10; /* change this to whatever height you want it */
+}
+
+  
+  
+}

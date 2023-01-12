@@ -5,7 +5,7 @@ import "./info.css";
 function Info() {
   
   return (
-    <div className="About">
+    <div className="Info">
     <br/>
     <div className="Info-container">
       <h1>Track your measurements</h1> 

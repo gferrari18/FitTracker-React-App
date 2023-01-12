@@ -6,9 +6,10 @@
   }
   
 html, body {
-    height: 100%;
-    width: 100%;
+    min-height: auto;
+    min-width: auto;
 }
+
   
 .Home,
 .Download,
@@ -16,7 +17,7 @@ html, body {
 .About
  {
   display: flex;
-  height: 90vh;
+  height: 95vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
@@ -40,12 +41,16 @@ html, body {
   color: rgb(252, 252, 252);
 }
 
-.About {
+.About{
+  background-image: url(./images/SpokaneDowntown.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
   display: flex;
-  height:auto;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
   color: rgb(255, 255, 255);
   flex-direction: column;
 }
+
